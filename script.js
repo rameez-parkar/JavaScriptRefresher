@@ -159,11 +159,68 @@ if (isMarried) {
 
 //falsy values: undefined, null, '', 0, NaN
 //truthy values: NOT a falsy value
-
+/*
 var height;
 
 if (height) {
   console.log("Variable has been defined");
 } else {
   console.log("Variable has not been defined");
+}
+*/
+
+/******************************************************/
+//CODING CHALLENGE 2 - BASKETBALL GAME
+
+var scoreJohn,
+  scoreMike,
+  scoreMary,
+  avgJohn = 0,
+  avgMike = 0,
+  avgMary = 0;
+scoreJohn = [89, 120, 103];
+scoreMike = [116, 94, 123];
+scoreMary = [97, 134, 105];
+
+for (var index = 0; index < scoreJohn.length; index++) {
+  avgJohn += scoreJohn[index];
+  avgMike += scoreMike[index];
+  avgMary += scoreMary[index];
+}
+avgJohn /= scoreJohn.length;
+avgMike /= scoreMike.length;
+avgMary /= scoreMary.length;
+
+if (avgJohn > avgMike && avgJohn > avgMary) {
+  console.log(
+    "John beat Mike & Mary with an average score of " +
+      avgJohn +
+      " to " +
+      avgMike +
+      " & " +
+      avgMary +
+      " respectively."
+  );
+} else if (avgMike > avgMary && avgMike > avgJohn) {
+  console.log(
+    "Mike beat John & Mary with an average score of " +
+      avgMike +
+      " to " +
+      avgJohn +
+      " & " +
+      avgMary +
+      " respectively."
+  );
+} else if (avgMary > avgMike && avgMary > avgJohn) {
+  console.log(
+    "Mary beat John & Mike with an average score of " +
+      avgMary +
+      " to " +
+      avgJohn +
+      " & " +
+      avgMike +
+      " respectively."
+  );
+} else {
+  console.log("There is a draw.");
 }
