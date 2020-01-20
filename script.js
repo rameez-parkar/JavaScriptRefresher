@@ -114,7 +114,7 @@ console.log(x, y);
 
 /******************************************************/
 //Coding Challenge 1 - John & Mark BMI Comparison
-
+/*
 var johnHeight, johnWeight, markHeight, markWeight, johnBMI, markBMI;
 johnHeight = 1.72;
 johnWeight = 81;
@@ -130,3 +130,40 @@ markBMI = CalculateBMI(markWeight, markHeight);
 
 var isMarkHigherBMI = markBMI > johnBMI;
 console.log("Is Mark's BMI higher than John's BMI? " + isMarkHigherBMI);
+*/
+
+/******************************************************/
+//if-else statements
+/*
+var firstName = "John";
+var civilStatus = "single";
+
+if (civilStatus === "married") {
+  console.log(firstName + " is Married.");
+} else {
+  console.log(firstName + " is single.");
+}
+
+var isMarried = false;
+
+if (isMarried) {
+  console.log(firstName + " is Married.");
+} else {
+  console.log(firstName + " is single.");
+}
+*/
+/******************************************************/
+
+/******************************************************/
+//Truthy and falsy values
+
+//falsy values: undefined, null, '', 0, NaN
+//truthy values: NOT a falsy value
+
+var height;
+
+if (height) {
+  console.log("Variable has been defined");
+} else {
+  console.log("Variable has not been defined");
+}
