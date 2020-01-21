@@ -171,7 +171,7 @@ if (height) {
 
 /******************************************************/
 //CODING CHALLENGE 2 - BASKETBALL GAME
-
+/*
 var scoreJohn,
   scoreMike,
   scoreMary,
@@ -224,3 +224,52 @@ if (avgJohn > avgMike && avgJohn > avgMary) {
 } else {
   console.log("There is a draw.");
 }
+*/
+/******************************************************/
+
+/******************************************************/
+//Functions
+/*
+function CalculateAge(birthYear) {
+  return 2020 - birthYear;
+}
+
+var ageJohn = CalculateAge(1989);
+var ageMike = CalculateAge(1948);
+var ageJane = CalculateAge(1997);
+
+console.log("John is " + ageJohn + " years old.");
+console.log("Mike is " + ageMike + " years old.");
+console.log("Jane is " + ageJane + " years old.");
+
+function YearsUntilRetirement(year, firstName) {
+  var age = CalculateAge(year);
+  var retirement = 65 - age;
+  console.log(firstName + " retires in " + retirement + " years.");
+}
+
+YearsUntilRetirement(1974, "John");
+*/
+/******************************************************/
+
+/******************************************************/
+//Functions Statements and Expressions
+
+//function expression
+/*
+var whatDoYouDo = function(job, firstName) {
+  switch (job) {
+    case "teacher":
+      return firstName + " teaches to code.";
+    case "driver":
+      return firstName + " drives cars.";
+    case "designer":
+      return firstName + " designes stuff.";
+    default:
+      return firstName + " does something else.";
+  }
+};
+
+console.log(whatDoYouDo("teacher", "John"));
+*/
+/******************************************************/
