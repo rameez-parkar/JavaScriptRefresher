@@ -273,3 +273,20 @@ var whatDoYouDo = function(job, firstName) {
 console.log(whatDoYouDo("teacher", "John"));
 */
 /******************************************************/
+
+/******************************************************/
+//Arrays
+
+var john = ["John", "Smith", 1990, "teacher", false];
+
+john.push("blue"); //adds to end of array
+john.unshift("Mr."); //adds to beginning of array
+console.log(john);
+
+john.pop(); //removes from end of array
+john.shift(); //removes from beginning of array
+console.log(john);
+
+console.log(john.indexOf("teacher"));
+
+/******************************************************/
