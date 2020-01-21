@@ -276,7 +276,7 @@ console.log(whatDoYouDo("teacher", "John"));
 
 /******************************************************/
 //Arrays
-
+/*
 var john = ["John", "Smith", 1990, "teacher", false];
 
 john.push("blue"); //adds to end of array
@@ -288,5 +288,31 @@ john.shift(); //removes from beginning of array
 console.log(john);
 
 console.log(john.indexOf("teacher"));
+*/
+/******************************************************/
 
+/******************************************************/
+//CODING CHALLENGE 3 - TIP CALCULATOR
+
+var bills = new Array();
+var tips = new Array();
+var finalAmount = new Array();
+
+function TipCalculator(bills) {
+  for (var index = 0; index < bills.length; index++) {
+    if (bills[index] < 50) {
+      tips.push(0.2 * bills[index]);
+    } else if (bills[index] >= 50 && bills[index] <= 200) {
+      tips.push(0.15 * bills[index]);
+    } else {
+      tips.push(0.1 * bills[index]);
+    }
+    finalAmount.push(bills[index] + tips[index]);
+  }
+}
+
+bills = [124, 48, 268];
+TipCalculator(bills);
+console.log("Tips : " + tips);
+console.log("Final Amount : " + finalAmount);
 /******************************************************/
