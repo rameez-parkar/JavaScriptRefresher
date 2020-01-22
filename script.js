@@ -320,7 +320,7 @@ console.log("Final Amount : " + finalAmount);
 
 /******************************************************/
 //Coding Challenge 4 - John & Mark BMI Comparison Using Objects
-
+/*
 var bmiJohn = {
   fullName: "John Smith",
   mass: 64,
@@ -370,5 +370,38 @@ if (bmiJohn.CalculateBMI() > bmiMark.CalculateBMI()) {
       bmiJohn.bmi
   );
 }
+*/
+/******************************************************/
+
+/******************************************************/
+//CODING CHALLENGE 3 - TIP CALCULATOR USING LOOPS AND OBJECTS
+
+var billTip = {
+  bills: [124, 48, 268, 180, 42],
+  TipCalculator: function() {
+    this.tips = new Array();
+    for (var i = 0; i < this.bills.length; i++) {
+      if (this.bills[i] < 50) {
+        this.tips[i] = 0.2 * this.bills[i];
+      } else if (this.bills[i] >= 50 && this.bills[i] <= 200) {
+        this.tips[i] = 0.15 * this.bills[i];
+      } else if (this.bills[i] > 200) {
+        this.tips[i] = 0.1 * this.bills[i];
+      }
+    }
+  },
+  FinalAmountCalculator: function() {
+    this.finalAmount = new Array();
+    for (var i = 0; i < this.bills.length; i++) {
+      this.finalAmount[i] = this.bills[i] + this.tips[i];
+    }
+  }
+};
+
+billTip.TipCalculator();
+billTip.FinalAmountCalculator();
+
+console.log("TIPS : " + billTip.tips);
+console.log("FINAL AMOUNT : " + billTip.finalAmount);
 
 /******************************************************/
