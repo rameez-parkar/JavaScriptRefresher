@@ -293,7 +293,7 @@ console.log(john.indexOf("teacher"));
 
 /******************************************************/
 //CODING CHALLENGE 3 - TIP CALCULATOR
-
+/*
 var bills = new Array();
 var tips = new Array();
 var finalAmount = new Array();
@@ -315,4 +315,60 @@ bills = [124, 48, 268];
 TipCalculator(bills);
 console.log("Tips : " + tips);
 console.log("Final Amount : " + finalAmount);
+*/
+/******************************************************/
+
+/******************************************************/
+//Coding Challenge 4 - John & Mark BMI Comparison Using Objects
+
+var bmiJohn = {
+  fullName: "John Smith",
+  mass: 64,
+  height: 1.67,
+  CalculateBMI: function() {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  }
+};
+
+var bmiMark = {
+  fullName: "Mark Jonas",
+  mass: 72,
+  height: 1.76,
+  CalculateBMI: function() {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  }
+};
+
+if (bmiJohn.CalculateBMI() > bmiMark.CalculateBMI()) {
+  console.log(
+    bmiJohn.fullName +
+      " has higher BMI of " +
+      bmiJohn.bmi +
+      " than " +
+      bmiMark.fullName +
+      " with BMI " +
+      bmiMark.bmi
+  );
+} else if (bmiMark.CalculateBMI() > bmiJohn.CalculateBMI()) {
+  console.log(
+    bmiMark.fullName +
+      " has higher BMI of " +
+      bmiMark.bmi +
+      " than " +
+      bmiJohn.fullName +
+      " with BMI " +
+      bmiJohn.bmi
+  );
+} else {
+  console.log(
+    bmiJohn.fullName +
+      " & " +
+      bmiMark.fullName +
+      " have same BMI " +
+      bmiJohn.bmi
+  );
+}
+
 /******************************************************/
