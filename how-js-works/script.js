@@ -1,6 +1,6 @@
 ///////////////////////////////////////
 // Lecture: Hoisting
-
+/*
 //functions
 //This function execution(calculateAge) works fine as Hoisting works for function declaration.
 calculateAge(1997);
@@ -27,26 +27,24 @@ function foo() {
 }
 foo();
 console.log(age); //prints 23, as the scope of age here is global.
-
+*/
 ///////////////////////////////////////
 // Lecture: Scoping
 
 // First scoping example
 
-/*
-var a = 'Hello!';
+var a = "Hello!";
 first();
 
 function first() {
-    var b = 'Hi!';
-    second();
+  var b = "Hi!";
+  second();
 
-    function second() {
-        var c = 'Hey!';
-        console.log(a + b + c);
-    }
+  function second() {
+    var c = "Hey!";
+    console.log(a + b + c);
+  }
 }
-*/
 
 // Example to show the differece between execution stack and scope chain
 
