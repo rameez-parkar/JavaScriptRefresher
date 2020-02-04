@@ -374,8 +374,8 @@ if (bmiJohn.CalculateBMI() > bmiMark.CalculateBMI()) {
 /******************************************************/
 
 /******************************************************/
-//CODING CHALLENGE 3 - TIP CALCULATOR USING LOOPS AND OBJECTS
-
+//CODING CHALLENGE 5 - TIP CALCULATOR USING LOOPS AND OBJECTS
+/*
 var billTip = {
   bills: [124, 48, 268, 180, 42],
   TipCalculator: function() {
@@ -403,5 +403,5 @@ billTip.FinalAmountCalculator();
 
 console.log("TIPS : " + billTip.tips);
 console.log("FINAL AMOUNT : " + billTip.finalAmount);
-
+*/
 /******************************************************/
